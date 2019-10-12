@@ -112,6 +112,13 @@
 
 }
 
+
+.navbar-dark .navbar-nav .active > .nav-link{
+  color: rgba(255,255,255,.5);
+}
+.active_menu_item{
+  color: white !important;
+}
 /* timeline */
 
 /* The actual timeline (the vertical ruler) */

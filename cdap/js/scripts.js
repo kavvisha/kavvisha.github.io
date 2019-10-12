@@ -16,4 +16,11 @@ $(document).ready(function(){
     $(this).parent('.accordion_item').children('.accordion_content').toggleClass('openaccordion');
   });
 
+  $(document).on('click', '.navigation_handler ul li a', function(event) {
+    // event.preventDefault();
+    $(this).parent('ul').children('a').removeClass('active_menu_item')
+    $(this).addClass('active_menu_item');
+    
+  });
+
 });
