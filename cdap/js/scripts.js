@@ -14,13 +14,14 @@ $(document).ready(function(){
 
   $('.accordion_main').click(function(event) {
     $(this).parent('.accordion_item').children('.accordion_content').toggleClass('openaccordion');
+    $(this).children('.chev_icon').toggleClass('open_box');
   });
 
   $(document).on('click', '.navigation_handler ul li a', function(event) {
     // event.preventDefault();
     $(this).parent('ul').children('a').removeClass('active_menu_item')
     $(this).addClass('active_menu_item');
-    
+
   });
 
 });

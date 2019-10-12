@@ -47,6 +47,7 @@
   width: 100%;
   background:rgba(0,0,0,0.3);
   padding: 10px 15px;
+  position: relative;
 }
 .accordion_area .accordion_item .accordion_content{
   width: 100%;
@@ -114,6 +115,14 @@
   color: white !important;
 }
 
+.chev_icon{
+  position: absolute;
+  right: 10px;
+  height: 60%;
+}
+.chev_icon.open_box{
+  transform: rotate(180deg);
+}
 /* Responsive */
 @media(max-width:991px){
   .profile_box{
