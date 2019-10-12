@@ -64,18 +64,12 @@
 
 .profile_box{
   text-align: center;
-
   background:#d2d2d2;
-
   padding: 10px 15px;
-
-  margin: 10px 0;
-
   border-radius: 10px;
-
-  width: 25%;
-
+  width: calc(25% - 10px);
   float: left;
+  margin: 10px 5px;
 }
 .profile_box.main_profile{
   width:100%;
@@ -119,6 +113,19 @@
 .active_menu_item{
   color: white !important;
 }
+
+/* Responsive */
+@media(max-width:991px){
+  .profile_box{
+    width:calc(50% - 10px);
+  }
+}
+@media(max-width:767px){
+  .profile_box{
+    width:calc(100% - 10px);
+  }
+}
+
 /* timeline */
 
 /* The actual timeline (the vertical ruler) */
