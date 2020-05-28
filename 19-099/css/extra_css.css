@@ -121,7 +121,20 @@
 }
 .bg-image-full{
   background-position: bottom;
+  background-size: contain;
 }
+
+.find_us_footer {
+  text-align: center;
+  margin: 10px 0;
+  color: white;
+}
+.find_us_footer .findus_person{
+  display: inline-block;
+  margin: 0 15px;
+  color: white;
+}
+
 /* Responsive */
 @media(max-width:991px){
   .profile_box{
