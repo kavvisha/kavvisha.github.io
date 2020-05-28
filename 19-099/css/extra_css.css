@@ -1,6 +1,17 @@
 *{
   transition: all 1s ease;
 }
+.img_box_w_cap{
+  text-align: center;
+
+}
+.h5, h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+p i{
+  font-family: Timesnewroman;
+}
 .btn{
   background:#677d93;
   color:white;
@@ -22,7 +33,8 @@
     color: #fff !important;
 }
 .lead {
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 22px;
 }
 .fullsizeimage{
   width:100%;
@@ -134,11 +146,17 @@
   margin: 10px 15px;
   color: white;
 }
-
+.set_header_image{
+  height: 300px;
+  background-position: center !important;
+}
 /* Responsive */
 @media(max-width:991px){
   .profile_box{
     width:calc(50% - 10px);
+  }
+  .set_header_image{
+    height: 150px;
   }
 }
 @media(max-width:767px){

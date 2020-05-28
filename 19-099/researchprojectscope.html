@@ -78,9 +78,9 @@
 
   <section id="domain">
     <!-- Image Section - set the background image for the header in the line below -->
-    <section class="py-5 bg-image-full" style="background-image: url('images/dddd.jpg');">
+    <section class="py-5 bg-image-full set_header_image" style="background-image: url('images/dddd.jpg');">
       <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-      
+
     </section>
     <!-- Content section -->
     <section class="py-5">
@@ -89,24 +89,197 @@
         <div class="text_panel">
 
           <p class="lead">Literature Survey</p>
+          <br>
+          <h5>
+            Text Classification
+          </h5>
+          <br>
           <p>
-            zzzzz
+            Text classification is one of the major segments in a data classification system which is the procedure of organizing the type of text file automatically based on the given dataset. Several text classification concepts are available in
+            the research world based on different supervised and unsupervised machine learning concepts.
           </p>
           <p>
-            zzzzzz
+            <b>Khudran Alzhrani, Ethan M. Ruddy, Terrance E. Boulty and C. Edward Chow "Automated Big Text Security Classification"[1]</b>
           </p>
           <p>
-            zzzzzz
+            The threat of leakage of sensitive information from inside attacks can be minimized by using DLP techniques. DLP techniques are composed with several phases as the discovering phase, detecting phase, protecting phase and monitoring phase
+            [1].
+          </p>
+
+          <p>
+            <ol>
+              <li>Discovery Phase - Unlabeled data is scanned with a scanning agent and is passed to the detecting component for classification [1].</li>
+              <li>Detecting Phase - Data is classified and labeled according to the sensitivity level.</li>
+              <li>Protecting Phase - Based on the classification, information is either passed to the safe module or transmitted over unsecure paths. The system is developed to provide protection to the data in different approaches as treat
+                transmitting data and data at rest [1].</li>
+              <li>Monitoring Phase - At last, the monitoring module guarantees naming consistency and tracks clients' activities on the sensitive data inside the system [1].</li>
+            </ol>
           </p>
           <p>
-            zzzzzzz
+            <i>Figure I </i> illustrate the general components of a general DLP solution. This system is focused on developing the existing solutions to bring out a general statistical structure including text classification mechanisms [1].
+          </p>
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure I: A prototypical Data Leak Prevention (DLP) framework</i></p>
+          </div>
+
+          <p><b>
+              Fang Miao, Pu Zhang, Libiao Jin, Hongda Wu "Chinese News Text Classification Based on Machine learning algorithm"
+            </b></p>
+
+          <p>
+            Most of the developed classification algorithms are based on machine learning principles. A machine learning text classification system can be broken down into 4 components as text pretreatment, text representation, classifier training
+            and
+            classification. This classification system is a Chinese news text classifier which is based on K-nearest neighbor, Naive Bayes and Support vector machine [2].
+          </p>
+
+          <p>
+            This research paper is based on the above mentioned components and this proposed system is developed to train the classifier module depending on the existing datasets which will classify the unclassified news. The shown Figure II
+            illustrates the four components of a text classification system and the basic relationship between them [2].
+          </p>
+
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure II: Text Classification Model</i></p>
+          </div>
+
+          <p>The results of the training set and the test set derived from the news corpus of the Fudan University after classifying from this system is shown below in <i>Table I.</i></p>
+          <div class="img_box_w_cap">
+            table!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Table I: Result of Classification</i></p>
+          </div>
+
+          <p>Based on the above collected results the precision value, recall and F-value is calculated. The obtained results are indicated on the below <i>Table II.</i></p>
+          <div class="img_box_w_cap">
+            table!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Table II: Performance Evaluation</i></p>
+          </div>
+
+          <p>
+            After analyzing the data in <i>Table I</i> and <i>Table II </i>, it is clear that the precision value, recall and the F-value are the highest in the SVM algorithm. However, the SVM algorithm is time consuming. Therefore it is only
+            suitable for small datasets. Other two algorithms produced similar results [2].
+          </p>
+
+          <p>
+            <b>
+              Ge Peng, Sipei Liu and Jin Wang "Sensitivity-Proof Content Advertising Based on Two-Stage Text Classification" [3]
+            </b>
+          </p>
+
+          <p>
+            Social media is one of the most prominent information sharing platforms in the modern world. There are some advantages as well as some disadvantages of using social media. Sharing of the sensitive information in an unauthorized manner is
+            one of the major disadvantages of social media. Sex-related information, violate news are some of them. This research paper is based on content classification based on sensitivity level. The proposed system is developed under two stages
+            [3].
+          </p>
+
+          <p>
+            <ol>
+              <li>Advertisement classification</li>
+              <li>Sensitivity detection</li>
+            </ol>
+          </p>
+
+          <p>
+            The solution heavily focuses on two classifiers, general advertisement classifier and sensitivity detector. General advertisement classifier will classify the content based on the text and assign the advertisements to the respective Ad
+            class. The sensitivity detector will then classify the pre-classified advertisements again based on the sensitive information to produce results. The hierarchical architecture developed within the system enables the functioning of the
+            system efficiently which is shown in the <i>Figure III</i> below [3].
+          </p>
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure III: Architecture of two-stage Classification</i></p>
+          </div>
+
+          <p>The policy implemented for the classification process is shown below in <i>Table III.</i></p>
+          <div class="img_box_w_cap">
+            table!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Table III: Decision Policy Table</i></p>
+          </div>
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure IV: Text Classification Methodology</i></p>
+          </div>
+
+          <h5>Image Classification </h5>
+          <p>
+            Another method to classify files is based on the image content of the file. Image classification is referred to as a process that is able to classify an image according to its visual content. An image classification algorithm has to be
+            designed to analyze the content of the image. David Kaeli, in his book which is heterogeneous Computing with OpenCL 2.0 states how important the BoW model is related to document classification and natural language processing. Furthermore
+            he highlights the fact that the BoW model is used to classify images. For this purpose, features of the image should be identified and should be fed for the machine learning algorithm. A feature generation algorithm can be used to convert
+            an image to a set of features which is also called as the signature of the image.
           </p>
           <p>
-            zzzzzzzz
+            A high level algorithm for image classification includes
+            <ul>
+              <li>Feature generation </li>
+              <li>Clustering</li>
+              <li>Histogram building steps</li>
+            </ul>
           </p>
+
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure V: High level algorithm for Image Classification</i></p>
+          </div>
+
           <p>
-            zzzzzzzz
+            Sergios Theodoridis and Konstantinos Koutroumbas in their book, Pattern Recognition, define diffusely about features, feature hectors and classifiers. By showing two images with distinct regions inside it, authors try to convince the fact
+            that the two regions of the image are visually different. This process is aided by already available image databases with a number of patterns which leads to machine learning.
+
           </p>
+
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure VI: Image Comparison </i></p>
+          </div>
+
+          <p>
+            Moreover, Robert C. Weih, Jr. and Norman D. Riggan, Jr. proposed OBJECT-BASED CLASSIFICATION VS. PIXEL-BASED CLASSIFICATION: COMPARATIVE IMPORTANCE OF MULTI-RESOLUTION IMAGERY and verbosely defined about the 3 main techniques of image
+            classification in remote sensing [6].
+            <ul>
+              <li>Unsupervised Image Classification</li>
+              <li>Supervised Image Classification</li>
+              <li>Object-based Image Analysis</li>
+            </ul>
+            The two most common approaches are said to be Unsupervised and Supervised techniques but lately object based classification has been used more for work related to high resolution data.
+            <ul>
+              <li>
+                Unsupervised classification steps are Generating clusters and Assigning classes
+                <div class="img_box_w_cap">
+                  img!
+                  <img class="fullsizeimage" src="" alt="">
+                  <p><i>Figure VII: Unsupervised Classification </i></p>
+                </div>
+              </li>
+
+              <li>
+                Supervised classification steps are namely Select training areas, Generating signature files and classification.
+                <div class="img_box_w_cap">
+                  img!
+                  <img class="fullsizeimage" src="" alt="">
+                  <p><i>Figure VIII: Supervised Classification</i></p>
+                </div>
+              </li>
+
+              <li>
+                Object based classification steps are namely Performing multiresolution segmentation, Selecting training areas and Classification.
+                <div class="img_box_w_cap">
+                  img!
+                  <img class="fullsizeimage" src="" alt="">
+                  <p><i>Figure IX: Object based Classification</i></p>
+                </div>
+              </li>
+            </ul>
+
+          </p>
+
         </div>
         <div class="text_panel">
 
