@@ -279,6 +279,320 @@
             </ul>
 
           </p>
+          <h5>
+            Prevention Techniques
+          </h5>
+          <p>In real world situations there are a number of complex policies, in these access decisions depend on the rule. According to the different application rules are coming, for example, from organizational regulations, practices and
+            government laws. To develop the access controls, the system needs to ensure that the availability of the resources, confidentiality and integrity of the data.</p>
+          <p>There are three main types of access control policies.</p>
+          <p>Mandatory access control (MAC), in this policy users has no authority to override the policies and it is controlled centrally by the security policy administrator. This is used when the use of resources is determined by the
+            characteristics of the resource and the subject. Here the resource owner does not have a say in controlling access. The security policy administrator defines the utilization of resources and their access policy, which cannot be overridden
+            by the end users, and the policy, will decide who has authority to access the particular programs and files. MAC is mostly used in a system where confidentiality is the priority.[3]</p>
+          <p>Discretionary access control (DAC), this policy Contrast with Mandatory Access Control (MAC) which is determined by the system administrator while DAC policies are determined by the end user with permission. So there each resource will
+            have a resource owner. In DAC, a user has complete authority over all resources it owns and also determines the permissions for other users who have those resources and programs.[4]</p>
+          <p>Role-based access control (RBAC), this policy is rather simple in comparison to others. In RBAC roles are assigned by the system administrator statically. In which access is controlled depending on the roles that the users have in a
+            system. (RBAC) is mostly used to control the access to computer or network resources depending on the roles of individual users within an organization. In this context we discuss the different access control policies and models that have
+            been proposed by the researchers, whilst finding the current status of access control systems and their low level implementation in terms of security mechanisms. This review gives the idea of different access control policies to develop
+            the access control systems and gives the overview comparison of the different security policies and their mechanisms.[4]</p>
+          <p>Throughout this research paper Role Based Access Controls are put into use. After a successful user login, the role of the user will be identified and since the permissions are mapped to the roles beforehand, the logged in user will only
+            be able to perform the specified activities on the files.[4]</p>
+
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure X: Role Based Access Controls</i></p>
+          </div>
+
+          <p>The system protection is based on the permission that describes a given access right to a particular object or set of objects. In the RBAC model we are dealt with unauthorized access to the computer system resources and data [29]. Since
+            we have considered only the access rights that users are required to execute a particular transaction on a particular object from the defined set of objects.[4]</p>
+
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure XI: User role permission mapping </i></p>
+          </div>
+
+          <p>A permission p is a pair < trans, object>, where trans represents the transaction that executes on the set of objects that is object .Consider P indicate the universal set of permissions, Trans indicate the universal set of transactions,
+              and Obj indicates the set of objects. We can define the association between permission/transaction and permission/object with the following functions. Trans (p) : P → Tr, It gives the associated transaction to the specified permission
+              p. ObP (p) : P → 2Obj ,It gives the associated set of objects to the specified permission p. A role is created by collecting permissions according to the functional and logical requirements to this role should represent. Each role has a
+              name associated with this and it uniquely identifies this role in the system. A role r is a pair of < rn, pset>, where rn indicates the role name and pset indicates the set of role permissions. The mapping between roles and permissions
+                can be defined with the following function: PR(r): R → 2P, It gives the associated set of permissions to the specified role r. Here R indicates the universal set of roles. While allocating permissions to roles it is needed to ensure
+                the principle of least privilege that is each role should have only required rights for its functional requirements.[4]
+          </p>
+
+          <p>It is needed to take necessary measures to achieve the integrity and security of data. The classified data should only be accessed by the authorized individuals while preventing the access by unauthorized individuals. A paper presented
+            by Rizwana Shaikh,Dr. M. Sasikumar mentioned Data can be classified based on several factors as outlined by the above figure. It mentions that Access Control, Content and Storage can be used as characteristics to classify data. Likewise,
+            we can use the characteristics which we use to classify text and image as a base to preserve the classification levels that will be implemented in the proposed data classification scheme [3]. Another paper presented by Bokefode Jayant. D,
+            Ubale Swapnaja A, Apte Sulabha S, Modani Dattatry G, it is declared access control based models can be used for achieving security[4]. Mainly access control is based on three models; Discretionary Access Control(DAC), Role Based Access
+            Control(RBAC) and Mandatory Access Control(MAC). Out of those three Role Based Access Control best suits the proposed data classification scheme. In RBAC, there are defined sets of roles which predefined permissions on objects. The users
+            are assigned to the roles, the user will only be able to perform the tasks defined for that particular role [4]. </p>
+
+          <p>Access Control will be effective only if the users are authenticated before that. There are several authentication mechanisms currently ruling the authentication system.</p>
+
+          <p>Authentication can be made possible in different ways. A basic authentication technique is a page containing a login form. After filling out the login form, the input data will be validated against a server and will return a session
+            cookie. The idea behind cookies is that they help to maintain continuity and states on the web. When the user visits the same website again, the browser sends the cookie to the web server which uses this cookie to identify the user. The
+            purpose of a cookie is to provide information for the subsequent server-browser communications. For instance, a merchant website could use a cookie that contains the user’s name and credit card number, and this information can be used to
+            make future payment transactions easier.</p>
+
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure XII: Cookie Authentication</i></p>
+          </div>
+
+          <p>If the credentials are correct, the system continues to step two, which returns a cookie back to the system. The client then sends this cookie to the service. Based on this cookie, it decides whether the user is granted access to the
+            data. In some cases, the service contacts the authentication server to verify whether the cookie is still valid.</p>
+          <p>While the user stays logged in, the cookie would be sent along with every subsequent request. The server can then compare the session id stored on the cookie against the session information stored in the memory to verify the user’s
+            identity and it sends the response with the corresponding state!</p>
+          <p>A token-based authentication mechanism has a different approach. A user enters the name and password into the client (client means the browser or mobile devices etc.). The client then sends these credentials (i.e. username and password)
+            to the Authorization Server. Then the Authorization Server authenticates the client credentials (i.e. username and password) and then it generates and returns an access token. This Access Token contains enough information to identify a
+            user and also contains the token expiry time the client application then includes the Access Token in the Authorization header of the HTTP request to access the restricted resources from the Resource Server until the token is expired.</p>
+
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure XIII: Token Based Authentication</i></p>
+          </div>
+
+          <p>This concept alone takes care of many of the problems with having to store information on the server. The biggest difference here is that the user’s state is not stored on the server, as the state is stored inside the token on the client
+            side instead.</p>
+
+          <h5>
+            File Modification Detection
+          </h5>
+          <p>
+            Data protection is important, critical, and vital for any organization. Loss of data effect the privacy and security of the organization. In the new era data has grown up massively in terms of volume. Data has value and if it is fall in
+            to the wrong hand it can have drastic consequences. It has been predicted the volume of data would reach 44 trillion gigabytes by the year 2021. And protecting data necessitates robust DLP. A report from Gartner predicts DLP to grow at
+            10% [1]. There have theft for sensitive data earlier, but they have become more frequent nowadays.
+          </p>
+          <p>
+            Data breaches with the loss of sensitive enterprises can affect reputation of the enterprises, cause financial loss and it may have to face lawsuits sometimes. So it is vital to know the importance of data protection, as a research team
+            have to find smart and efficient way to prevent data loss and detect data modification in an organization caused by intentional or unintentional attack to the data [2]. So, it’s very clear that enterprises are in need to implement a
+            robust system along with DLP technologies.
+          </p>
+
+          <p>
+            This writing is mainly focusing on integrity of the stored data and an innovative solution that allows to detect intentional/unintentional modification of data while increasing the effectiveness of the system. The author is proposing
+            several solutions based on the literature survey and finally proposing a novel scheme relying on fuzzy hashing for the detection of unauthorized data modification by the internal users of the system.
+          </p>
+
+          <p><b>Hashing standards to detect the file modification</b></p>
+
+          <p>
+            Hashing is a cryptographic sequence of letters and numbers generated when a file is analyzed by a hashing algorithm. When it comes to ensuring the integrity of file or file content the best answer is to use hashes. It is a crucial Data
+            Structure which is designed to implement a special function named the Hash function which is used to map a given value with a key for faster access of elements. The efficiency of mapping depends on the efficiency of the hash function
+            used.
+          </p>
+
+          <p>
+            For cryptographic hash function, the following properties are required: Preimage resistance: it is computationally infeasible to find any input which hashes to any pre-specified output. Second preimage resistance: it is computationally
+            infeasible to find any second input which has the same output as any specified input. Collision resistance: it is computationally infeasible to find a collision, i.e. two distinct inputs that hash to the same result [3]. Therefore, it is
+            evident that hashing can be utilized to exactly figure out whether a file is altered or not. Research world proved that there are several hashing algorithms out in the world to achieve integrity of our data. There are 2 most widely used
+            algorithms so far that are MD5 and SHA-256.
+          </p>
+
+          <p><b>Message Digest5</b></p>
+
+          <p>
+            MD stands for Message Digest and describes a mathematical function that can take place on a variable length string. The number 5 simply depicts that MD5 was the successor to MD4. MD5 is essentially a checksum that is used to validate the
+            authenticity of a file or a string and this is one of its most common uses. It makes large amounts of information to be compressed into a confidential format before signing the private key by digital signatures (that is, any length byte
+            string is transformed into a certain length of big integer) [4].
+          </p>
+
+          <p>
+            Md5 hashes goes through several steps to compare 2 files and verify the integrity of files.
+          </p>
+
+          <ol>
+            <li>Padding bit
+              <ul>
+                <li>
+                  <p>Without loss of generality of the file content, it supposes that the original data padding is always added until its length in bits is congruent. </p>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              Padding the length of data
+              <ul>
+                <li>A 64-bit representation of the length of bits of the original message is appended to the result of above step. It is present by two 32-bit digits. At this time, the length of data is filled to a multiple of 512.
+                  <div class="img_box_w_cap">
+                    img!
+                    <img class="fullsizeimage" src="" alt="">
+                    <p><i>Figure XIV: MD5 Working principle of an iterated hash function</i></p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              Initialize MD5 Parameters
+              <ul>
+                <li>
+                  Using the original data which is in the updated file it would calculate the hash value.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              Bit operation functions
+              <ul>
+                <li>
+                  Define four-bit operation functions respectively.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              Main transformation process
+              <ul>
+                <li>
+                  The number of main loops in this algorithm is the number of 512-bit information groups. The main loop has four rounds, each round carries out 16 operations, so the total of operations are64 steps.
+                  <div class="img_box_w_cap">
+                    img!
+                    <img class="fullsizeimage" src="" alt="">
+                    <p><i>Figure XV: One step of the compression function</i></p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ol>
+
+          <p>Parameters of MD5</p>
+          <p>Below equation shows a single MD5 operation. </p>
+          <p>
+            <ol>
+              <li>
+                Default Parameters
+                <ul>
+                  <li>
+                    <math>
+                      a = b + ((a + Process P (b, c, d) + M[i] + t[k]) <<< s) Here:- a, b, c, d=are Chaining variables Process P=A non linear </math>
+
+                  </li>
+                  <li>
+                    <math>
+                      • operation M[i] =For M[q x 16 + i ], which is the ith 32-bit word in the qth 512-bit block of the message t[k]=a constant <<<s=circular-left shift by s bits </math>
+
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                Actual Parameters
+                <ul>
+                  <li>
+                    Key Length: 64 bits, 128 bits, 256 bits , 512 bits
+                  </li>
+                  <li>
+                    Block Size: 128 bits
+                  </li>
+                  <li>
+                    Cryptanalysis: Resistance Strong against Digital Certificate and very fast on 32-bit machines Security Secure
+                  </li>
+
+                  <li>
+                    Rounds: 4
+                  </li>
+                  <li>
+                    Steps: 16
+                  </li>
+                </ul>
+              </li>
+            </ol>
+
+            <p><b>Secure Hash Algorithm 256</b></p>
+
+            <p>
+              SHA-256 is an emerging technology that is considered a stronger option for conducting a checksum for file integrity. SHA-256 uses 256-bits compared to 128 used for an MD5, which exponentially increases the different letter/number
+              combinations that can be generated and decreases the plausibility of a collision or repeatability, which theoretically exists with MD5 [5].
+            </p>
+
+            <div class="img_box_w_cap">
+              img!
+              <img class="fullsizeimage" src="" alt="">
+              <p><i>Figure XVI: SHA-256 mechanism</i></p>
+            </div>
+
+            <p>
+              SHA 256 is also going through several rounds of steps to obtain the message digest [7].
+            </p>
+
+            <ul>
+              <li>
+                Step 1: - Padding / Add Padding to the end of the genuine message length is 64 bits and multiple of 512.
+              </li>
+
+              <li>
+                Step2: - Appending length In this step the excluding length is calculated
+              </li>
+
+              <li>
+                Step3: - Divide the Input into 512-bit blocks in this step we divide the input in the 512 bit blocks
+              </li>
+              <li>
+                Step4: - Initialize chaining variables. During this step we are initializing chaining variables here we initialize 5 chaining variables of 32 bit each=160 bit of total.
+              </li>
+              <li>
+                Step5: - Process Blocks
+              </li>
+
+            </ul>
+
+            <ol>
+              <li>Copy the chaining variables </li>
+              <li>Divide the 512 into 16 sub blocks </li>
+              <li>Process 4 rounds of 20 steps each</li>
+            </ol>
+          </p>
+
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure XVII: SHA-256 mechanism</i></p>
+          </div>
+
+
+          <p>Parameters of SHA 256</p>
+
+          <p>Below equation shows a single SHA operation. </p>
+          <ol>
+            <li>
+              Default Parameters
+              <ul>
+                <li>abcde(e+process p_s5(a)+W[t]+k[t]),a,s30(b), c, d</li>
+                <li>Here:- a, b, c, d, e =chaining variables </li>
+                <li>Process p =status of logical operations st =<<< W[t]=derived other 32 bits bytes </li>
+                <li>K[t]=five additives constants are defined</li>
+              </ul>
+            </li>
+
+            <li>
+              Actual Parameters
+              <ul>
+                <li>Key Length: 128 bits </li>
+                <li>Block Size: 160 bits</li>
+                <li>Cryptanalysis: Resistance Strong against Digital Certificate. </li>
+                <li>Rounds: 4 </li>
+                <li>Total Steps: 20</li>
+
+              </ul>
+            </li>
+          </ol>
+
+          <div class="img_box_w_cap">
+            table!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Table IV: Comparison between MD5 and SHA</i></p>
+          </div>
+
+          <div class="img_box_w_cap">
+            img!
+            <img class="fullsizeimage" src="" alt="">
+            <p><i>Figure XVIII: Performance chart of hashing algorithms</i></p>
+          </div>
+
+          <p><b>Create custom event log and port listening</b></p>
 
         </div>
         <div class="text_panel">
@@ -460,6 +774,9 @@
               <li>Ensure that the solution is easily accessible and portable while maintaining the security.</li>
               <li>Adoption of a commercially valuable development structure and a sustainable outcome.</li>
             </ul>
+          </p>
+          <p>
+
           </p>
 
         </div>
